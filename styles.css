@@ -1,0 +1,276 @@
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+  background-color: #ddd;
+}
+
+.dataCard {
+  background-color: #efefef;
+  border-radius: .5em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1em;
+}
+.revenueCard {
+  width: 92%;
+  height: 20rem;
+}
+
+.customerCard {
+  width: 50%;
+  height: 20rem;
+}
+
+.categoryCard {
+  width: 40%;
+  height: 20rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:#ddd;
+  color: #333;
+}
+
+.page {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#pie-chart-container {
+  margin: 20px 0;
+}
+
+#pie-chart {
+  max-width: 100%;
+  height: auto;
+}
+
+#text-output {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #a27c7c;
+}
+
+#root {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* New styles for search bar and upload icon */
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  /* Add styles for the Generate button */
+.generate-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.generate-button:hover {
+  background-color: #218838;
+}
+
+/* Styles for the error message */
+.error-message {
+  color: #ff0000;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* Styles for the file upload icons */
+.upload-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.upload-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.uploaded-files {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.file-icon {
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.pdf-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.file-name {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #333;
+  word-wrap: break-word;
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.generate-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.generate-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.results-page {
+  display: flex;
+  flex-direction: column; /* Stacks upper and lower halves */
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: ddd;
+}
+
+
+.upper-half {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.lower-half {
+  width: 100%;
+  display: flex;
+  flex-direction: row; /* Forces horizontal alignment */
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: nowrap; /* Prevents wrapping into a column */
+}
+
+
+
+.dataCard {
+  background-color: #efefef;
+  border-radius: 0.5em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1em;
+}
+
+.barCard, .doughnutCard {
+  flex: 1 0 45%;
+  max-width: 45%;
+  min-width: 300px;
+  height: 25rem; /* Increase height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.chart-image {
+  width: 100%;
+  height: auto;
+}
+
+.text-output {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+}
